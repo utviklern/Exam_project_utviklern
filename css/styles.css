@@ -11,6 +11,10 @@
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
+body {
+    background-color: #F1FFFF;
+}
+
 /* variables */
 :root {
     --Montserrat: 'Montserrat', sans-serif;
@@ -44,6 +48,12 @@
     text-align: center;
     margin: var(--s80px) 0;
     font-size: var(--s48px);
+}
+
+.main-h2 {
+    font-family: var(--Bodoni);
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 .main-text {
@@ -124,6 +134,8 @@ footer ul li a:visited {
     max-width: 70rem;
 }
 
+/* login */
+
 .login {
     display: flex;
     flex-direction: column;
@@ -131,6 +143,35 @@ footer ul li a:visited {
     justify-content: center;
     gap: 1rem;
 }
+
+#password, #email {
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: var(--s16px);
+    margin-bottom: var(--s80px);
+    margin-right: 6rem;
+}
+
+.breather {
+    margin-right: var(--s20px);
+}
+#email{
+    margin-left: var(--s32px);
+}
+
+/* end */
+
+/* new post */
+
+.make-new-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* end */
 
 
 /* footer */
@@ -172,9 +213,11 @@ footer li {
     font-family: var(--Bodoni);
 }
 
-.read-login-btn {
+.read-more-btn {
     background-color: #7A9394;
-    ;
+}
+.login-btn {
+    background-color: rgb(130, 156, 157);
 }
 
 .edit-btn {
@@ -203,6 +246,7 @@ footer li {
     font-size: 2rem;
     font-weight: 100;
 }
+
 
 /* end */
 
