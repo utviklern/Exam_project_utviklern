@@ -27,7 +27,7 @@
         </div>
         <ul class="desk-nav-links">
             <li><a href="/" class="active-desknav" aria-label="go home">Home</a></li>
-            <li><a href="/post/index" aria-label="see posts">Posts</a></li>
+            <li><a href="/post/index.html" aria-label="see posts">Posts</a></li>
             <li><a href="/account/login.html" aria-label="log in">Log in</a></li>
         </ul>
     </nav>
@@ -38,16 +38,16 @@
         <h1 class="main-h1">Create, Edit or Delete</h1>
 
         <form class="make-new-post" id="make-new-post">
-            <label for="title">Title</label>
+            <label for="title" class="main-h2">Title</label>
             <input type="text" id="title" name="title" required maxlength="200">
 
-            <label for="body">Body Content</label>
+            <label for="body" class="main-h2">Body Content</label>
             <textarea id="body" rows="3" name="body"></textarea>
 
-            <label for="image">Image URL</label>
+            <label for="image" class="main-h2">Image URL</label>
             <input type="text" id="image" name="image">
 
-            <label for="alt">Image Alt</label>
+            <label for="alt" class="main-h2">Image Alt</label>
             <input type="text" id="alt" name="alt">
 
             <button type="submit" class="publish-btn sml-btn">Publish</button>
