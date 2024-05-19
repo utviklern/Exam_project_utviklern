@@ -210,12 +210,12 @@ max-width: 1600px;
 
 .img-wrapper-speci {
     max-width: 1500px;
-    height: 800px;
+    height: 600px;
     background: var(--image-background);
     margin: var(--s80px) auto 0 auto;
     display: flex;
     justify-content: center;
-    padding: var(--s100px 0);
+    /* padding: var(--s100px 0); */
 
     
 }
