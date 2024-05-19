@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     const postId = params.get("id");
     const specificPost = `https://v2.api.noroff.dev/blog/posts/Teigstad/${postId}`;
 
-
     if (postId) {
         try {
             const response = await fetch(specificPost);
@@ -24,20 +23,40 @@ document.addEventListener("DOMContentLoaded", async () => {
 function displayPost(post) {
     const postContainer = document.getElementById("post-container");
 
-
     const elements = [
-        { tag: "img", src: post.media.url, alt: post.media.alt, className: "post-img" },
+        {
+            tag: "div", className: "img-wrapper-speci", children: [
+                { tag: "img", src: post.media.url, alt: post.media.alt, className: "post-img" }
+            ]
+        },
         { tag: "h1", text: post.title, className: "main-h1" },
         { tag: "p", text: post.body, className: "main-text" },
-        
     ];
 
-    for (let element of elements) {
+    let index = 0;
+    while (index < elements.length) {
+        const element = elements[index];
         const el = document.createElement(element.tag);
-        el.textContent = element.text;
+
+        if (element.children) {
+            element.children.forEach(child => {
+                const childElement = document.createElement(child.tag);
+                childElement.src = child.src;
+                childElement.alt = child.alt;
+                if (child.className) {
+                    childElement.className = child.className;
+                }
+                el.appendChild(childElement);
+            });
+        } else {
+            el.textContent = element.text;
+        }
+
         if (element.className) {
             el.className = element.className;
         }
+
         postContainer.appendChild(el);
+        index++;
     }
 }

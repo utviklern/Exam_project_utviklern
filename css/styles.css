@@ -37,6 +37,7 @@ body {
 
     --header-height: 6.25rem;
     --footer-height: 23rem;
+    --image-background: linear-gradient(0deg, rgba(185, 202, 137, 1) 0%, rgba(209, 234, 233, 1) 100%);
 }
 
 /* ---end--- */
@@ -60,6 +61,7 @@ body {
 .main-text {
     font-family: var(--Bodoni);
     font-weight: 400;
+    max-width: 1500px;
 }
 
 /* --end--*/
@@ -189,7 +191,7 @@ footer ul li a:visited {
 
 /* end */
 
-/* posts public */
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -205,6 +207,22 @@ footer ul li a:visited {
 max-width: 1600px;
 
 }
+
+.img-wrapper-speci {
+    max-width: 1500px;
+    height: 500px;
+    background: var(--image-background);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.post-img{
+    overflow: hidden;
+    border-radius: var(--s8px);
+}
+
 
 .buttons-post {
     display: flex;
