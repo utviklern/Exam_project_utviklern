@@ -215,9 +215,12 @@ max-width: 1600px;
 .post-card-img {
     width: var(--s260px);
     height: var(--s260px);
-    background-color: green;
+    /* background-color: green; */
     /*visuel støtte*/
     border-radius: 8px;
+}
+.post-card-img img{
+    max-width: var(--s260px);
 }
 
 .post-card {
