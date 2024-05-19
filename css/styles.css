@@ -223,6 +223,7 @@ max-width: 1600px;
 .post-img{
     overflow: hidden;
     border-radius: var(--s8px);
+    max-width: 600px;
 }
 
 
