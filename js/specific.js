@@ -21,14 +21,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 function displayPost(post) {
-    const postContainer = document.getElementById("post-container");
+    const specificContainer = document.getElementById("specific-container");
 
     const elements = [
-        {
-            tag: "div", className: "img-wrapper-speci", children: [
-                { tag: "img", src: post.media.url, alt: post.media.alt, className: "post-img" }
-            ]
-        },
+        // {
+        //     tag: "div", className: "img-wrapper-speci", children: [
+        //         { tag: "img", src: post.media.url, alt: post.media.alt, className: "post-img" }
+        //     ]
+        // }, kommenter inn etter bytte av img
+        
         { tag: "h1", text: post.title, className: "main-h1" },
         { tag: "p", text: post.body, className: "main-text" },
     ];
@@ -56,7 +57,7 @@ function displayPost(post) {
             el.className = element.className;
         }
 
-        postContainer.appendChild(el);
+        specificContainer.appendChild(el);
         index++;
     }
 }
