@@ -8,7 +8,7 @@
     <!--css-->
     <link rel="stylesheet" href="/css/styles.css">
     <!--js-->
-    <script src="/js/script.js" defer></script>  
+    <script src="/js/script.js" defer type="module"></script>  
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/3ecb9b6910.js" defer crossorigin="anonymous"></script> 
     <!-- google fonts -->
@@ -34,25 +34,35 @@
 </header>
 
 <body>
-    <section class="content">
-        <div class="wrapper">
-            <div class="slider">
+    <div class="wrapper-home">
+        <div id="slider-background">
+            <div class="slider-container">
+                <button class="slider-pointer right">&#9654;</button>
 
-            </div>
-            <div id="text-home">
-                <h1 class="main-h1">Welcome to the blog!</h1>
-                <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eaque exercitationem doloribus minima eveniet! Animi magni laboriosam ipsa, sed aliquid iste eum fuga. Consequatur quibusdam officiis pariatur aliquid iusto repudiandae!
-                Repellat ut quos at ex expedita! Impedit porro tempora quasi, blanditiis repudiandae ducimus animi placeat id explicabo modi quia repellendus suscipit neque cupiditate dicta? Ab ut dolore unde omnis obcaecati?
-                Eveniet, iure fugiat modi corrupti nulla a, vero culpa nesciunt officiis obcaecati fuga exercitationem unde quas maiores ratione quis velit voluptatem corporis sit cupiditate dicta autem aperiam dolor numquam! Nam.
-                Eveniet, aliquid! Veritatis debitis dolor illo, repellendus iste quasi unde. Culpa similique consequuntur aperiam sequi veritatis distinctio repudiandae recusandae libero quam corrupti accusamus, nam optio, vitae deserunt reiciendis voluptas reprehenderit!
-                Sit omnis assumenda a placeat quisquam sapiente maiores iure laboriosam quidem voluptatem nostrum doloremque nobis aspernatur odit, quasi tempora quam ipsa corporis ratione repellendus unde quos aut qui. Cupiditate, sapiente.</p>
-            </div>
+                <div id="slider" class="slider">
+                </div>
 
-            <div class="home-container">
-
+                <button class="slider-pointer left">&#9654;</button>
             </div>
         </div>
-    </section>
+        <div id="text-home">
+            <h1 class="main-h1">Welcome to the blog!</h1>
+            <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eaque exercitationem doloribus minima eveniet! Animi magni laboriosam ipsa, sed aliquid iste eum fuga. Consequatur quibusdam officiis pariatur aliquid iusto repudiandae!
+            Repellat ut quos at ex expedita! Impedit porro tempora quasi, blanditiis repudiandae ducimus animi placeat id explicabo modi quia repellendus suscipit neque cupiditate dicta? Ab ut dolore unde omnis obcaecati?
+            <br>
+            <br>Eveniet, iure fugiat modi corrupti nulla a, vero culpa nesciunt officiis obcaecati fuga exercitationem unde quas maiores ratione quis velit voluptatem corporis sit cupiditate dicta autem aperiam dolor numquam! Nam.
+            Eveniet, aliquid! Veritatis debitis dolor illo, repellendus iste quasi unde. Culpa similique consequuntur aperiam sequi veritatis distinctio repudiandae recusandae libero quam corrupti accusamus, nam optio, vitae deserunt reiciendis voluptas reprehenderit!
+            Sit omnis assumenda a placeat quisquam sapiente maiores iure laboriosam quidem voluptatem nostrum doloremque nobis aspernatur odit, quasi tempora quam ipsa corporis ratione repellendus unde quos aut qui. Cupiditate, sapiente.</p>
+        </div>
+
+        
+        <div id="home-container" class="grid-home"></div>
+            
+        </div>
+    </div>
+    <!-- <section class="content">
+    </section> -->
+
 </body>
 <footer>
     <ul>

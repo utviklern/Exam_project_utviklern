@@ -40,6 +40,10 @@ document.addEventListener("DOMContentLoaded", async function() {
             postCardImg.alt = post.media.alt || "Post image";
             postCardImgContainer.appendChild(postCardImg);
 
+             postCardImg.addEventListener("click", function() { //redirekter ved trykk på bildet
+                window.location.href = `/post/specific.html?id=${post.id}`;
+            });
+
             const postTitle = document.createElement("h2");//tittel
             postTitle.className = "main-h2";
             postTitle.textContent = post.title;
