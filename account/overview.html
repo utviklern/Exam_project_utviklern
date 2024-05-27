@@ -9,7 +9,7 @@
     <!--css-->
     <link rel="stylesheet" href="/css/styles.css">
     <!--js-->
-    <script src="/js/script.js" defer></script>
+    <script src="/js/overview.js" defer></script>
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/3ecb9b6910.js" defer crossorigin="anonymous"></script>
     <!-- google fonts -->
@@ -26,7 +26,7 @@
             <a href="/"><img src="/media/logo/logo250p.webp" alt="clickable logo" aria-label="go home"></a>
         </div>
         <ul class="desk-nav-links">
-            <li><a href="/" aria-label="go home">Home</a></li>
+            <li><a href="/"  aria-label="go home">Home</a></li>
             <li><a href="/post/index.html" aria-label="see posts">Posts</a></li>
             <li><a href="/account/login.html" class="active-desknav" aria-label="log in">Log in</a></li>
         </ul>
@@ -35,140 +35,19 @@
 
 <body>
     <section class="content">
-        <h1 class="main-h1">Create, edit or delete</h1>
+        <h1 class="main-h1">Overview. Create, edit or delete</h1>
+
         <a href="/post/make.html" class="sml-btn create-btn ">Create</a>
-        <div class="wrapper">
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-            <div class="post-card">
-                <div class="post-card-img">
-                    <img src="" alt="">
-                </div>
-                <div class="buttons-post">
-                    <a href="/post/index.html" class="sml-btn edit-btn">Edit</a>
-                    <a href="/post/index.html" class="sml-btn delete-btn">Delete</a>
-                </div>
-            </div>
-    
-    
-        </div>
-    
+
+        <div id="overview-container" class="grid-overview"></div>
     </section>
 </body>
+
 <footer>
     <ul>
-        <li><a href="/" class="active-footer" aria-label="go home">Home</a></li>
+        <li><a href="/"  aria-label="go home">Home</a></li>
         <li><a href="/post/index.html" aria-label="see posts">Posts</a></li>
-        <li><a href="/account/login.html" aria-label="log in">Log in</a></li>
+        <li><a href="/account/login.html" class="active-footer" aria-label="log in">Log in</a></li>
     </ul>
 </footer>
 

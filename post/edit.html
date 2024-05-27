@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit post</title>
+    <meta name="description" content="">
+    <!--css-->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!--js-->
+    <script src="/js/edit.js" defer></script>
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/3ecb9b6910.js" defer crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Average&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<header>
+    <nav class="desk-nav">
+        <div class="desk-nav-logo">
+            <a href="/"><img src="/media/logo/logo250p.webp" alt="clickable logo" aria-label="go home"></a>
+        </div>
+        <ul class="desk-nav-links">
+            <li><a href="/" aria-label="go home">Home</a></li>
+            <li><a href="/post/index.html" aria-label="see posts">Posts</a></li>
+            <li><a href="/account/login.html" class="active-desknav" aria-label="log in">Log in</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <section class="content">
+        <h1 class="main-h1">edit blog post</h1>
+
+        <form class="edit-post" id="edit-post">
+            <label for="title" class="main-h2">title</label>
+            <input type="text" id="title" name="title" required maxlength="200">
+
+            <label for="body" class="main-h2">Body content</label>
+            <textarea id="body" rows="3" name="body"></textarea>
+
+            <label for="image" class="main-h2">image URL</label>
+            <input type="text" id="image" name="image">
+
+            <label for="alt" class="main-h2">image Alt</label>
+            <input type="text" id="alt" name="alt">
+
+            <button type="submit" class="publish-btn sml-btn">Update</button>
+            <button type="button" id="delete-post-button" class="delete-btn sml-btn">Delete</button>
+        </form>
+    </section>
+</body>
+
+<footer>
+    <ul>
+        <li><a href="/" aria-label="go home">Home</a></li>
+        <li><a href="/post/index.html" aria-label="see posts">Posts</a></li>
+        <li><a href="/account/login.html" class="active-footer" aria-label="log in">Log in</a></li>
+    </ul>
+</footer>
+
+</html>

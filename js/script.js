@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             postCardImgContainer.appendChild(postCardImg);
 
             postCardImg.addEventListener("click", function() { //redirekter ved trykk på bildet
-                window.location.href = `/post/specific.html?id=${post.id}`;
+                window.location.href = `/post/index.html?id=${post.id}`;
             });
 
             const postTitle = document.createElement("h2");//tittel
