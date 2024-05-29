@@ -56,7 +56,7 @@ async function updateBlogPost(e) {//funskjon for oppdateroing
     const json = await response.json();
 
     if (response.ok) {
-        window.location.href = "index.html";
+        window.location.href = "../account/overview.html";
     } else {
         console.log("error", json);
     }
