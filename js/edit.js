@@ -72,7 +72,7 @@ async function deletePost() {// funskjon for sletting
     });
 
     if (response.ok) {
-        window.location.href = "index.html";
+        window.location.href = "../account/overview.html";
     } else {
         const json = await response.json();
         console.log("error", json);

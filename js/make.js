@@ -39,7 +39,7 @@ async function makeBlogPost(e) {
 
     // Hvis responsen er ok, redirect til index.html (bytte til overview senere)
     if (response.ok) {
-        window.location.href = "index.html";
+        window.location.href = "../account/overview.html";
     } else {
         console.log("error", json);
     }
