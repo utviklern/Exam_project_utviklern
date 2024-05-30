@@ -473,11 +473,13 @@ footer li {
 
 .publish-btn {
     background-color: #C2D6AB;
+    margin-bottom: 9rem
 }
 
 .delete-btn {
     background-color: #D95B5B;
     /* padding-top: 10px;x */
+    margin-bottom: 9rem
 }
 
 .create-btn {
